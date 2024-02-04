@@ -21,7 +21,7 @@ def even_number_game():
         result, ans, ans_e = ask_number()
         if not result:
             print(f"'{ans}' is wrong answer ;(. Correct answer was '{ans_e}'.")
-            print(f'Let\'s try again, {name}')
+            print(f'Let\'s try again, {name}!')
             return False
         print('Correct!')
         attemps += 1
