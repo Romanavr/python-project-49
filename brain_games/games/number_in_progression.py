@@ -10,5 +10,6 @@ def game_handler():
     random_num = randrange(1, 10)
     answer = progression[random_num]
     progression[random_num] = '..'
+    progression = ' '.join(str(x) for x in progression)
 
     return progression, answer
