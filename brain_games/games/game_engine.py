@@ -30,7 +30,7 @@ def play_game(game_handler: callable) -> bool:
         question, answer = game_handler()
         user_answer = ask_question(question)
         if str(answer) != user_answer:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{answer}'.")
+            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{answer}'.")  # noqa: E501
             return False
         print('Correct!')
         attempts += 1
