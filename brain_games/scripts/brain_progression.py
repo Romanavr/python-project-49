@@ -1,8 +1,8 @@
-from brain_games.games import number_in_progression
+from brain_games.games.game_engine import new_game
 
 
 def main():
-    number_in_progression.new_game()
+    new_game('progression')
 
 
 if __name__ == '__main__':

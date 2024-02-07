@@ -1,5 +1,4 @@
 from random import randrange
-from brain_games.games.game_engine import start_game
 from math import gcd
 
 
@@ -13,7 +12,3 @@ def game_handler():
     answer = gcd(num_1, num_2)
 
     return question, answer
-
-
-def new_game():
-    start_game(GAME_DESCRIPTION, game_handler)

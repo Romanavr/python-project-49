@@ -1,5 +1,4 @@
 from random import randrange
-from brain_games.games.game_engine import start_game
 
 GAME_DESCRIPTION = 'What number is missing in the progression?'
 
@@ -13,7 +12,3 @@ def game_handler():
     progression[random_num] = '..'
 
     return progression, answer
-
-
-def new_game():
-    start_game(GAME_DESCRIPTION, game_handler)

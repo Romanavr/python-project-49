@@ -1,5 +1,4 @@
 from random import randrange
-from brain_games.games.game_engine import start_game
 
 GAME_DESCRIPTION = 'What is the result of the expression?'
 
@@ -12,7 +11,3 @@ def game_handler():
     answer = eval(question)
 
     return question, answer
-
-
-def new_game():
-    start_game(GAME_DESCRIPTION, game_handler)
